@@ -1,0 +1,345 @@
+*{padding: 0; margin:0; box-sizing: border-box;}
+
+body{
+	scroll-behavior: smooth;
+		overflow-x: hidden;
+		background: linear-gradient( #e1f5fd, #d8daf3);
+}
+
+/************************************************header pic dsign********************************************/
+header{
+	width: 100vw;
+	height: 90vh;
+	background:linear-gradient(rgba(100, 100, 100, 0.8),rgba(87, 87, 87, 0.8)), url('/img/banner.jpg');
+	background-size: cover;
+	background-position: none;
+	position: relative;
+	background-attachment: fixed;
+}
+
+/***********************************aline******************/
+
+nav{
+	width: 100%;
+	height: 80px;
+	background: rgb(0, 0, 0);
+	color: rgb(70, 70, 70);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 70px;
+	position: fixed;
+	top:0;
+	background:rgb(255, 255, 255);
+	z-index: 1;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/***********************************************logo*************************/
+
+.logo{
+	font-family: sans-serif;
+	font-size:2.5em;
+	margin-right: 19.9em;
+}
+.logo span{
+	color: #0011ff;
+	
+}
+/****************************************aline of about***********************************/
+.menu a{
+	text-decoration: none;
+	color: rgb(71, 71, 71);
+	font-size:20px;
+	padding: 10px 20px;
+	font-family: sans-serif;
+
+}
+
+/******about section hover*******/
+
+.menu a:first-child{
+	color:#0011ff;
+}
+.menu a:hover{
+	color: #0011ff;
+	transition: 0.4s;
+}
+
+/************login style/search********************/
+
+.icon i{
+	font-size:20px;
+}
+.icon i:hover{
+	color: #0011ff;
+}
+.icon a{
+	padding:10px 20px;
+	background:#0011ff;
+	color:rgb(0, 0, 0);
+	text-decoration: none;
+	margin-left:30px;
+	border-radius: 5px;  
+}
+.icon a:hover{
+	background: transparent;
+	border:1px solid #0004ff;
+	color: rgb(185, 185, 185);
+	transition: 0.4s ease;
+}
+/*******************banner header style********************/
+
+.h-text{
+	max-width: 700px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+.h-text h1{
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(200deg,#fc578e,#6cc0e7,#f887cd);
+    font-size: 3.5em;
+	line-height: 1.5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 30s linear infinite;
+    background-size: 400%;
+	
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+
+	50%{
+        background-position: 200%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+.h-text h2{
+	font-family: sans-serif;
+	font-size:1.6em;
+	line-height: 3em;
+}
+
+/***************************************************search box style ****************************************/
+.h-text input{
+	width: 69%;
+	padding: 15px;
+	border-radius: 8px;
+	font-size: 20px;
+	border:none;
+	outline: none;
+}
+.h-text button{
+	width: 20%;
+	padding: 15px;
+	background: #0011ff;
+	font-size: 20px;
+	border:none;
+	outline: none;
+	color: white;
+	border-radius: 8px; 
+	margin-top: 30px;
+}
+/*******************************filter gallery*****************************************/
+.filter-gallery{
+	padding:100px;
+
+}
+
+
+.portfolio-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin:20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+    
+
+}
+.portfolio-menu ul li:hover{
+    background:  #0011ff;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+i.active{
+    background:#0011ff;
+    color: white;
+    border-radius: 8px;
+}
+.portfolio-item{
+    width: 100%;
+}
+.portfolio-item .item{
+    width:400px ;
+    height:400px;
+    float: left;
+    margin-bottom:40px;
+    margin-right: 25px;
+}
+.portfolio-item .item img{
+width: 100%;
+height: 100%;
+border-radius: 8px;
+}
+
+/**************************************************footer**********************************/
+footer{
+	background: #414141;
+    color: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	padding: 50px 100px;
+}
+.copyright{
+	text-align: center;
+	justify-content: center;
+	padding-top: 36px;
+	color: lightgray;
+}
+/*****************************************************newsletter****************************************/
+.newsletter{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:30px;
+	border:1px solid rgba(255,255,255,0.2);
+}
+.newsletter>div{
+	flex-basis: 50%;
+}
+.n-text{
+	
+	text-align: right;
+}
+.newsletter h2{
+	font-size: 2em;
+	font-family: sans-serif;
+}
+.newsletter p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.newsletter label{
+	position: relative;
+
+}
+.newsletter input{
+	padding: 20px;
+	width: 70%;
+	border-radius: 8px;
+	border:none;
+	outline: none;
+	font-family: sans-serif;
+}
+form{
+	
+}
+.newsletter button{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	width: 30%;
+	background: #0011ff;
+	color: white;
+	border:none;
+	outline: none;
+	border-radius: 0 8px 8px 0;
+}
+span{
+	color: #61b752;
+	margin-top: 10px;
+	margin-right: 46%;
+}
+
+/**************************************aline information layout*****************************************************/
+.f-contact{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top:3em;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.f-contact>div{
+	flex-basis:20%;
+
+
+}
+
+/*paragraph*/
+
+.f-contact p{
+	line-height:2em;
+	font-size: 20px;
+	color: rgb(128, 128, 128);	
+	cursor: pointer;
+}
+.f-contact p:hover{
+	color: white;
+}
+
+a:link{
+	color: rgb(128, 128, 128);
+	text-decoration:none;
+}
+
+a:visited{
+	line-height:2em;
+	font-size: 20px;
+	color: rgb(128, 128, 128);	
+	cursor: pointer;
+}
+a:hover{
+	color: rgb(255, 255, 255);
+}
+
+/****************************login**************************/
+.icon a:link{
+	color: rgb(255, 255, 255);
+	text-decoration:none;
+}
+.icon a:visited{
+	line-height:2em;
+	font-size: 20px;
+	color: rgb(255, 255, 255);	
+	cursor: pointer;
+}
+.icon a:hover{
+	color: black;
+}
+
+.f-contact i{
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding:10px;
+	font-size:16px;
+	margin: 20px 5px;
+	border-radius: 50%;
+	transition: .4s ease;
+}
+.f-contact i:hover{
+	background: transparent;
+	border:1px solid white;
+	color: white;
+}
+
+

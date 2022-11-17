@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unsplash clone</title>
+
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.js" type="text/javascript">
+    
+
+</head>
+<body>
+ 
+    <form action="/html/search.html" class="search-container">
+        <input type="text" autocomplete="off" name="search" class="search-input" 
+        placeholder="search image">
+        <button class="search" type="submit">search</button>
+    </form>
+
+    <!-- popup window -->
+    <div class="image-popup hide">
+        <button class="close-btn"></button>
+        <a href="#" class="download-btn">download image</a>
+        <img src="" class="large-img" alt="">
+        <button class="controls pre-btn"><img src="/img/page-left-navigation.png" alt=""></button>
+        <button class="controls nex-btn"><img src="/img/page-right-navigation.png" alt=""></button>
+    </div>
+
+<!----------------------------------------------------------------------gallery---------------------------------------------------------->
+    <section class="gallery">
+         <!-- <img src="/img/about us.png" class="gallery-img" alt="">  -->
+
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
